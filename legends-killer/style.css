@@ -59,7 +59,14 @@ a {
     color: #fff;
 }
 
-
+@media (max-width: 870px){ 
+    .my_content_left{ 
+    display:none; 
+    }
+    .my_content_right{ 
+        display:none; 
+    }
+} 
 .my_content {
     display: flex;
     flex-direction: row;
@@ -70,9 +77,11 @@ a {
     border-left: 2px solid rgba(150, 150, 150, 0.5);
     border-right: 2px solid rgba(150, 150, 150, 0.5);
 }
-
-
 .my_content_center {
+    
+    border-bottom: 2px solid rgba(150, 150, 150, 0.5);
+}
+.center_1 {
     border-bottom: 2px solid rgba(150, 150, 150, 0.5);
 }
 .my_content_right {
