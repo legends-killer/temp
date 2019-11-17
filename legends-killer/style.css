@@ -4,24 +4,63 @@ body {
     background: rgb(251, 253, 246);
 }
 li {
+    padding: 0px;
+    display: block;
+}
+
+.left_li {
     list-style-type: none;
     text-align: left;
-    padding-left: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
     width: 100%;
 }
-li:hover {
+.left_li a{
+    display: flex;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+.left_li a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.left_li:hover {
     background: #777777;
+    color: #fff;
+}
+.right_li {
+    list-style-type: none;
+    text-align: left;
+    width: 100%;
+    color: #900b09;
+}
+.right_li a{
+    display: flex;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: #900b09;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+.right_li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.right_li:hover {
+    background: #900b09;
+    color: #fff;
 }
 ul {
     margin: 0px;
     padding-left: 0px;
 }
-a {
-    color: #333;
-}
-
 
 .my_header {
     display: flex;
@@ -52,16 +91,22 @@ a {
     text-align: center;
 }
 .nav_item .a {
+    display: flex;
+    display: block;
+    justify-content: center;
+    align-items: center;
     color: #fff;
+    text-decoration: none;
 }
-.nav_item:hover {
-    background: #474747;
+.nav_item .a:hover {
+    background: #929292;
     color: #fff;
+    text-decoration: none;
 }
 
 @media (max-width: 870px){ 
     .my_content_left{ 
-    display:none; 
+        display:none; 
     }
     .my_content_right{ 
         display:none; 
@@ -78,7 +123,7 @@ a {
     border-right: 2px solid rgba(150, 150, 150, 0.5);
 }
 .my_content_center {
-    
+    flex-grow: 1;
     border-bottom: 2px solid rgba(150, 150, 150, 0.5);
 }
 .center_1 {
@@ -87,5 +132,6 @@ a {
 .my_content_right {
     width: 180px;
     border-left: 2px solid rgba(150, 150, 150, 0.5);
-    border-right: 2px solid rgba(150, 150, 150, 0.5);    
+    border-right: 2px solid rgba(150, 150, 150, 0.5);
+
 }
